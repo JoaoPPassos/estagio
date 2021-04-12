@@ -4,7 +4,7 @@ import { TouchableOpacity, TextInput } from 'react-native';
 export const Button = styled.TouchableOpacity`
     width: 80%;
     height: 50px;
-    background-color: ${props => props.primary ? '#acaaad' : '#785dd8'};
+    background-color: ${props => props.primary ? '#f7f7f7' : '#785dd8'};
     borderRadius: 50px;
     border: 1px solid #272335;
     align-items: center;

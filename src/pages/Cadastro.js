@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-
-import { View } from 'react-native';
+import { Text } from 'react-native';
+import { Link } from 'react-router-native';
 import { Background, Form, Section } from '../styledComponents/styledCadastro';
 import { Button, Input } from '../components/defaultComponents';
 
@@ -22,6 +22,11 @@ export default function Cadastro() {
                     <Input onChangeText={text => setIdade(text)} value={idade} placeholder="Idade" />
                     <Input onChangeText={text => setCidade(text)} value={cidade} placeholder="Cidade" />
                     <Input onChangeText={text => setEstado(text)} value={estado} placeholder="Estado" />
+                    <Button primary={true}>
+                        <Link to='/'>
+                            <Text>Cadastro</Text>
+                        </Link>
+                    </Button>
                 </Form>
             </Section>
         </Background>
